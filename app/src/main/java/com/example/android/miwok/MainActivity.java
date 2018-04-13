@@ -63,23 +63,23 @@ public class MainActivity extends AppCompatActivity {
         TextView phrases = (TextView) findViewById(R.id.phrases);
         //set onClickListener on that view
         phrases.setOnClickListener(new OnClickListener() {
-                                       @Override
-                                       public void onClick(View view) {
-                                           //create an activity to open {@link Phrases Activity}
-                                           Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-                                           //start the new activity
-                                           startActivity(phrasesIntent);
-                                       }
-                                   });
+            @Override
+            public void onClick(View view) {
+                //create an activity to open {@link Phrases Activity}
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                //start the new activity
+                startActivity(phrasesIntent);
+            }
+        });
 
         //find the view that shows Family category
-        TextView family=(TextView) findViewById(R.id.family);
+        TextView family = (TextView) findViewById(R.id.family);
         //set onClickListener on that view
         family.setOnClickListener(new OnClickListener() {
                                       @Override
                                       public void onClick(View view) {
                                           //create an activity to open {@link Family activity}
-                                          Intent familyIntent=new Intent(MainActivity.this, FamilyActivity.class);
+                                          Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
                                           // start the new activity
                                           startActivity(familyIntent);
 
